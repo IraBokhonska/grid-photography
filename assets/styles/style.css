@@ -66,6 +66,7 @@ img {
 
 [class*=grid-item] {
   position: relative;
+  bottom: -80px;
 }
 
 .empty {
@@ -75,6 +76,7 @@ img {
   background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
   border-radius: 20px;
   z-index: 3;
+  bottom: 80px;
 }
 
 .empty:hover {
@@ -87,6 +89,21 @@ img {
 .grid-container__architectural {
   min-height: 1170px;
 } 
+
+.icons__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin: -60px 20px;
+  z-index: 4;
+}
+
+.icons__block img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
 
 .subtitle__block {
   display: flex;
@@ -223,6 +240,11 @@ img {
     gap: 30px;
   }
 
+  [class*=grid-item] {
+    position: relative;
+    bottom: 0;
+  }
+
   img {
     max-width: 370px;
     min-height: 370px;
@@ -233,6 +255,10 @@ img {
   .empty {
     width: 0;
     height: 0;
+  }
+
+  .icons__block {
+    display: none;
   }
 
   img:hover {
